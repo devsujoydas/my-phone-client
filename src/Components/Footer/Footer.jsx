@@ -9,7 +9,7 @@ import { IoMailUnreadOutline } from "react-icons/io5";
 import { MdArrowForwardIos } from "react-icons/md";
 
 const Footer = () => {
-  const socialBtnStyle = "border border-black w-9 h-9 p-2 rounded-full text-black hover:bg-gray-900 hover:text-white active:scale-95 duration-500 transition-all "
+  const socialBtnStyle = "border border-black w-9 h-9 p-2 rounded-full hover:bg-gray-900 hover:text-white active:scale-95 duration-500 transition-all "
   const getTouchBtn = "border border-gray-300 w-9 h-9 p-2 rounded-full text-gray-300 active:scale-95 duration-500 transition-all"
   const footerBtns = "hover:text-yellow-400 transition-all duration-500 flex items-center gap-2"
 
@@ -20,9 +20,9 @@ const Footer = () => {
         <div className="max-w-7xl md:mx-auto px-5 lg:px-0 flex justify-between lg:flex-row flex-col gap-10">
 
           {/* Logo  */}
-          <div className="grid gap-8">
+          <div className="grid gap-5">
             <Link to="/">
-            <h1 className='text-4xl text-white font-semibold text-center'>Phone Hunt <br /> Express</h1>
+            <h1 className='text-4xl text-white font-semibold text-center'>Phone Hunt Express</h1>
             </Link>
             <p>Rapidiously myocardinate cross-platform <br /> intellectual capital model. Appropriately create <br /> interactive infrastructures</p>
           </div>
@@ -48,7 +48,7 @@ const Footer = () => {
               <IoMailUnreadOutline className={getTouchBtn} />
               <div className="grid grid-cols-1 gap-1">
                 <a href="mailto:sdsujoy920243@gmail.com" className={footerBtns}>sdsujoy920243@gmail.com</a>
-                <a href="mailto:sujoydaspc2023@gmail.com" className={footerBtns}>sujoydaspc2023@gmail.com</a>
+                <a href="mailto:sujoydaspc2023@gmail.com" className={footerBtns}>devsujoydas@gmail.com</a>
               </div>
             </div>
           </div>
@@ -82,15 +82,15 @@ const Footer = () => {
 
         </div>
       </div>
-
-      <div className="bg-secondary md:px-0 px-5">
+<hr className="text-zinc-400"/>
+      <div className="bg-black text-white md:px-0 px-5">
         <div className=" py-5 flex justify-between items-center md:flex-row flex-col gap-2 max-w-7xl mx-auto">
           <h1>&copy;  2025 By <Link to={"https://www.facebook.com/sujoydas36"} className="font-semibold">Sujoy Das</Link>. All Rights Reserved.</h1>
           <div className="flex gap-4">
-            <Link to={"https://www.facebook.com/sujoydas36"}> <FaFacebookF className={socialBtnStyle} /></Link>
-            <Link to={"https://www.youtube.com/@techuniverseai36"}><FaYoutube className={socialBtnStyle} /></Link>
-            <Link to={"https://github.com/devsujoy36"}><FiGithub className={socialBtnStyle} /></Link>
-            <Link to={"https://www.instagram.com/sdsujoy920243"}><FaInstagram className={socialBtnStyle} /></Link>
+            <Link to={"https://www.facebook.com/devsujoydas"}> <FaFacebookF className={`${socialBtnStyle} ${footerBtns}`} /></Link>
+            <Link to={"https://www.youtube.com/@devsujoydas"}><FaYoutube className={`${socialBtnStyle} ${footerBtns}`} /></Link>
+            <Link to={"https://github.com/devsujoydas"}><FiGithub className={`${socialBtnStyle} ${footerBtns}`} /></Link>
+            <Link to={"https://www.instagram.com/devsujoydas"}><FaInstagram className={`${socialBtnStyle} ${footerBtns}`} /></Link>
           </div>
         </div>
       </div>

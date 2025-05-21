@@ -25,12 +25,12 @@ const PhoneDetails = () => {
 
                     <div className="rounded-xl overflow-hidden grid gap-5 md:justify-start justify-center ">
                         <div className="overflow-hidden rounded-xl border">
-                            <img className="w-96  cursor-zoom-in hover:scale-125 transition-all" src={img[0]} alt="" />
-                            {/* <img className="w-96   hover:scale-125 transition-all" src={imgDefault} alt="" /> */}
+                            <img className="w-96  cursor-zoom-in hover:scale-105 active:scale-150 transition-all" src={img[0]} alt="" />
+                            
                         </div>
                         <div className="flex gap-2 justify-center flex-wrap w-96 items-center">
                             {img.map((url, index) => (
-                                <img key={index} src={url} alt={`iPhone 11 ${index + 1}`} className="w-20 h-22 rounded-lg border" />
+                                <img key={index} src={url} alt={`iPhone 11 ${index + 1}`} className="w-20 h-22 cursor-pointer active:scale-100 hover:scale-105 transition-all rounded-lg border" />
                             ))}
                         </div>
                     </div>
@@ -42,7 +42,7 @@ const PhoneDetails = () => {
 
                         <div className="flex gap-3 flex-wrap">
                             <p className="bg-gray-100 px-3 py-2"> Price: <span className="font-semibold">${price}</span></p>
-                            <p className="bg-gray-100 px-3 py-2">Status: In Stock</p>
+                            <p className="bg-gray-100 px-3 py-2">Status: <span className="text-emerald-600 font-semibold">In Stock</span></p>
                             <p className="bg-gray-100 px-3 py-2">Product Code: {id}</p>
                         </div>
 
@@ -58,7 +58,7 @@ const PhoneDetails = () => {
                             <div className="flex gap-3 flex-wrap text-black">
                                 {
                                     storage_options.map((storage, idx) => (
-                                        <button key={idx} className="bg-gray-100 px-3 py-1 active:bg-[#F27F20] rounded active:text-white transition-all">{storage}</button>
+                                        <button key={idx} className="bg-gray-100 px-3 py-1 active:bg-[#F27F20] rounded cursor-pointer active:text-white transition-all">{storage}</button>
                                     ))
                                 }
                             </div>
@@ -70,8 +70,8 @@ const PhoneDetails = () => {
                                 <span className="md:px-4 px-2 md:py-1 border-[#F27F20] border-l border-r rounded bg-gray-50 text-[#F27F20]">{number}</span>
                                 <button onClick={increment} className="text-2xl  md:mb-2 scale-105 active:scale-95 transition-all mb-1 md:mt-1">+</button>
                             </div>
-                            <button onClick={() => { }} className="bg-[#F27F20] transition-all  text-white md:px-4 px-2 md:py-2 py-1 rounded hover:bg-transparent hover:border-black border border-transparent active:scale-95 hover:text-[#F27F20]">Buy Now</button>
-                            <button onClick={() => { }} className="hover:bg-[#F27F20] text-[#F27F20] active:scale-95  hover:text-white border border-black hover:border-transparent transition-all md:px-4 px-2 md:py-2 py-1 rounded">Add To Card</button>
+                            <button onClick={() => { }} className="bg-[#F27F20] transition-all  text-white md:px-4 px-2 md:py-2 py-1 rounded hover:bg-transparent hover:border-black border border-transparent active:scale-95 cursor-pointer hover:text-[#F27F20]">Buy Now</button>
+                            <button onClick={() => { }} className="hover:bg-[#F27F20] text-[#F27F20] active:scale-95  cursor-pointer hover:text-white border border-black hover:border-transparent transition-all md:px-4 px-2 md:py-2 py-1 rounded">Add To Card</button>
                         </div>
                     </div>
                 </div>
