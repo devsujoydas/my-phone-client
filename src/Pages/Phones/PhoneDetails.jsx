@@ -20,7 +20,7 @@ const PhoneDetails = () => {
 
     return (
         <div className="py-10 bg-white min-h-[80vh]">
-            <div className="max-w-screen-2xl lg:mx-auto md:mx-10 mx-6">
+            <div className="max-w-screen-2xl lg:mx-auto md:mx-10 mx-5">
                 <div className=" flex w-full gap-5 lg:flex-row flex-col">
 
                     <div className="rounded-xl overflow-hidden grid gap-5 md:justify-start justify-center ">
@@ -79,12 +79,12 @@ const PhoneDetails = () => {
 
 
 
-                <div className=" my-8 p-4 border border-gray-300 rounded-lg shadow-lg">
+                <div className=" my-8  border border-gray-300 rounded-lg shadow-lg">
 
                     <div className=" ">
 
                         {/* Specifications */}
-                        <div className=" border-2 pt-4 rounded-lg">
+                        <div className="pt-4 rounded-lg">
                             <h1 className="text-2xl font-bold mb-4 text-center">Specifications</h1>
                             <div className="flex text-lg">
                                 <h1 className="md:w-1/6 w-5/12 text-gray-700 font-semibold border p-2">Brand:</h1>

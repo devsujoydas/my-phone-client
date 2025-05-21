@@ -6,6 +6,7 @@ import Home from './Pages/Home/Home';
 import Phones from './Pages/Phones/Phones';
 import Hero from './Pages/Hero/Hero';
 import PhoneDetails from './Pages/Phones/PhoneDetails';
+import Users from './Pages/Users/Users';
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,11 @@ const router = createBrowserRouter([
         path: '/phones/:id',
         element: <PhoneDetails/>,
         loader:({params})=>fetch(`http://localhost:3000/phones/${params.id}`)
+      },
+      {
+        path: '/users',
+        element: <Users />,
+        loader:()=>fetch('http://localhost:3000/users')
       },
     ]
   },

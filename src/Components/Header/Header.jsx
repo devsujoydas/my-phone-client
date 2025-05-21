@@ -60,16 +60,13 @@ const Header = () => {
                     </div>
 
                     {/* Mobile Menu */}
-                    <div className={`absolute inset-x-0 z-5 w-full px-6 py-4 transition-all duration-300 ease-in-out  lg:mt-0 lg:p-0 lg:top-0 lg:relative bg-primary lg:bg-transparent lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center ${isOpen ? 'translate-x-0 opacity-100' : 'opacity-0 -translate-x-full'}`}
+                    <div className={`absolute bg-gray-600 inset-x-0 z-5 w-full px-6 py-4 transition-all duration-300 ease-in-out  lg:mt-0 lg:p-0 lg:top-0 lg:relative bg-primary lg:bg-transparent lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center ${isOpen ? 'translate-x-0 opacity-100' : 'opacity-0 -translate-x-full'}`}
                     >
                         <div onClick={() => setIsOpen(!isOpen)} className='flex flex-col  -mx-6 md:gap-5 lg:flex-row lg:items-center lg:mx-8'>
                             <NavLink to={'/'} className={navBtnStyle}> Home </NavLink>
                             <NavLink to={'/phones'} className={navBtnStyle}> Phones</NavLink>
-                            {/* <NavLink to={'/teams'} className={navBtnStyle}> Team </NavLink>
-                            <NavLink to={'/blogs'} className={navBtnStyle}> Blogs </NavLink>
-                            <NavLink to={"/contact"} className={navBtnStyle}>Contact Us</NavLink>
-                            <NavLink to={"/signin"} className={navBtnStyle}>Sign In</NavLink> */}
-                          
+                            <NavLink to={'/users'} className={navBtnStyle}> Users</NavLink>
+                            
                         </div>
 
                         <div className='flex items-center mt-4 lg:mt-0'>
